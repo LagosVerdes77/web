@@ -1,0 +1,376 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+body{
+    margin: 0px;
+    background-color: #fff;
+}
+.contenedor{
+    width: 100%;
+}
+
+#header img{
+    width: 10vw;
+    height: 5vw;
+  
+}
+#header{
+    font-family: sans-serif;
+  background: #ffffff;
+  background: linear-gradient(90deg, #ffffff 36%, #1cad9d 87%);
+  filter: progid:DXImageTransform.Microsof;
+  }
+#header{
+    display: flex;
+    justify-content: space-between;
+    
+    width: 100%;
+}
+
+
+.menu_icono, #check{
+    display: none;
+}
+label #hamb img{
+  display: none;
+
+}
+#menu_horizontal{
+  list-style: none;
+    display: flex;
+    font-size: .8rem;
+}
+#menu_horizontal>li>a{
+display: block;
+padding: 10px;
+color: white;
+text-decoration:none;
+}
+#menu_horizontal>li:hover>a{
+  border-bottom: 2px solid white;
+}
+#menu_horizontal>li:hover .desplegable{
+  display: block;
+}
+.desplegable{
+  display: none;
+  list-style: none;
+  position: absolute;
+  z-index: 1;
+}
+.desplegable>li>a{
+  display:block;
+  text-decoration: none;
+  color: white;
+  padding: 15px 20px;
+  background:#3cc787db;
+  backdrop-filter: blur(3px);
+  
+}
+.desplegable>li:hover>a{
+background: #1cad9f;
+  background-repeat: no-repeat;
+  border-bottom: 2px solid white;
+}
+
+#hero{
+    background-image: url(img/hero.jpg);
+    height: 50vh;
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#hero h1{
+    color: white;
+    font-size: 3.2em;
+    font-family: Bradley Hand ITC;
+}
+
+.informacion{
+    padding: 30px 10px;
+    width: 50%;
+}
+
+.informacion h2{
+    color: #3cc787db;
+    font-family: Bradley Hand ITC;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 2.4em;
+}
+
+#ingresar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+#mapa{
+    display: flex;
+    justify-content: center;
+}
+
+.img1{
+  height: 70vh;
+  width: 50%;
+}
+
+.informacion{
+    padding: 30px 10px;
+    width: 50%;
+}
+
+.informacion h2{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    text-align: center;
+    padding: 20px 0px;
+    font-size: 2.4em;
+}
+.sitios {
+    display: flex;
+    justify-content: space-between;
+}
+.sitios .ubicacion{
+  width: 30px;
+  height: 30px;
+}
+.caja{
+   width: 25%;
+    margin: 20px;
+    border-radius: 6px;
+    overflow: hidden;
+    background: #fff;
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+    font-family: sans-serif;
+    color: black;
+    text-align:center;
+    cursor: default;
+    transition: all 400ms ease;
+}
+.caja:hover{
+  box-shadow: 5px 5px 20px rgba(0,0,0,0.4);
+  transform: translateY(-3%);
+}
+.caja img{
+  height:160px;
+  width:100%;
+  margin-bottom:20px;
+}
+.caja .contenido p{
+  line-height: 1.5;
+  color:#6a6a6a;
+  margin-bottom: 5%;
+}
+.caja .contenido h2{
+  font-family: Bradley Hand ITC;
+    color: #3cc787db;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+.caja_flexible{
+  display: flex;
+}
+#footer_inicio{
+  margin-top: 0vh;
+    height: 20vh;
+    background-color: #1cad9f;
+    color: black;
+    font-family: lato;
+    justify-content: center;
+  }
+#footer_inicio>div{
+  width: 80%;
+  justify-content: flex-end;
+    align-items: center;
+    justify-content: center;
+}
+footer{
+  display: flex;
+    margin-top:3.40vh;
+    height: 10vh;
+    background-color: white;
+    color: black;
+    font-family: lato;
+    justify-content: center;
+  }
+  footer h3{
+    font-family: Bradley Hand ITC;
+    color: black;
+    font-size: 1.5em;
+  }
+  footer img{
+    height: 8vh;
+    padding: 5px ;
+  }
+  footer nav div{
+    justify-content: space-between;
+}
+.div_footer{
+  width: 80%;
+  justify-content: flex-end;
+    align-items: center;
+    justify-content: center;
+
+}
+@media screen and (max-width: 768px) {
+    #header{
+        top: 0px;
+    }
+    .li-desplegable{
+        display: none;
+    }
+    details{
+        display: block;
+    }
+    .menu_icono{
+        display: flex;
+        
+        top: 25px;
+        left:15px;
+        cursor: pointer;
+    }
+  label #hamb img{
+    display: flex;
+    align-items: flex-end;
+    height: 40px;
+    width: 40px;
+    border-radius: 2px;
+    
+    top: 18px;
+    left: 18px;
+  }
+  
+  label #hamb{
+    display: block;
+}
+  #nav_menu{
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    left: -100%;
+    top: 72px;
+  z-index: 1;
+    background:  #1cad9f;
+    text-align: center;
+    transition: all .5s; 
+  backdrop-filter: blur(40px);
+  }
+  #check:checked ~ #nav_menu{
+    left: 0;
+  }
+  #check:checked header{
+    position: fixed;
+  }
+  label #hamb img {
+     display: block;
+  }
+  #menu_horizontal {
+    flex-direction: column;
+    font-size: 1.4rem;
+  }
+  #menu_horizontal li{
+    padding: 0.7em;
+  }
+  #menu_horizontal>li:hover .desplegable{
+    display: none;
+  } 
+   #header img{
+    width: 10vw;
+    height: 9vw;
+  }
+  #hero h1{
+    text-align: center;
+    color: white;
+    font-size: 3.2em;
+    font-family: Bradley Hand ITC;
+} 
+  .caja_flexible{
+  display: flex;
+}
+#footer_inicio{
+  margin-top: 0vh;
+    height: 20vh;
+    background-color: #1cad9f;
+    color: black;
+    font-family: lato;
+    justify-content: center;
+  }
+#footer_inicio>div{
+  width: 80%;
+  justify-content: flex-end;
+    align-items: center;
+    justify-content: center;
+}
+footer{
+  display: flex;
+    margin-top:3.40vh;
+    height: 10vh;
+    background-color: white;
+    color: black;
+    font-family: Bradley Hand ITC;
+    justify-content: center;
+  }
+  footer h3{
+    font-family: Bradley Hand ITC;
+    color: black;
+    font-size: 1.5em;
+  }
+  footer img{
+     height: 30px;
+    width: 40px;
+    height: 8vh;
+    padding: 5px ;
+  }
+  footer nav div{
+    justify-content: space-between;
+}
+
+.div_footer{
+  width: 80%;
+  display: flex;
+  justify-content: flex-end;
+    align-items: center;
+    justify-content: center;
+
+}
+
+  
+
+
+.sitios {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+}
+.caja{
+   width: 25%;
+    margin: 20px;
+    border-radius: 6px;
+    overflow: hidden;
+    background: #fff;
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+    font-family: sans-serif;
+    color: black;
+    text-align:center;
+    cursor: default;
+    transition: all 400ms ease;
+}
+
+#mapa{
+    display: flex;
+    justify-content: center;
+
+}
+
+
